@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@font-face {
+	font-family: 'wuwa';
+    src: url('wuwa.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body::-webkit-scrollbar {
+    width: 0.8vw; 
+    height: 100vh;
+    background-color: #292a2d;
+    border-left: 0.3vh solid #6d604a;
+}
+
+body::-webkit-scrollbar-thumb {
+	width: ;
+	height: 1vh;
+    background-color: #202124; 
+    border-radius: 1vh; 
+    border: 0.3vh solid #6D604A;
+}
+
+.left-menu::-webkit-scrollbar {
+    width: 0.4vw; 
+    height: 100vh;
+}
+
+.left-menu::-webkit-scrollbar-thumb {
+    background-color: #292a2d; 
+    border-radius: 1vh; 
+    border: 0.3vh solid #6D604A;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #202124;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	overflow-x: hidden;
+	}
+
+header {
+	width: 100vw;
+	height: 8vh;
+	color: white;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	text-align: center;
+	justify-content: space-between;
+}
+
+.logo {
+	background-color: #292a2d;
+	width: 15%;
+	height: 100%;
+	align-content: center;
+	border-right: 0.3vh solid #6D604A;
+	border-bottom: 0.3vh solid #6D604A;
+	border-radius: 0 0 1vh 0;
+}
+
+.logo a {
+	text-decoration: none;
+	color:white;
+}
+
+.navbar {
+	background-color: #292a2d;
+	width: 68%;
+	height: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	border: 0.3vh solid #6D604A;
+	border-top: none;
+	border-radius: 0 0 1vh 1vh;
+	text-align: center;
+
+}
+
+.navbar > a{
+	text-decoration: none;
+	color: white;
+	font-family: "Ubuntu", serif;
+	font-size: 3vh;
+	font-weight: 500;
+  	width: 20%;
+  	height: 70%;
+  	border: 0.3vh solid #6D604A;
+  	border-radius: 1vh;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	transition: border 0.2s ease-in-out;
+}
+
+.navbar > a:hover {
+	border: 0.3vh solid #fdf9a9;
+	transition: border 0.2s ease-in-out;
+}
+
+
+
+
+.links {
+	background-color: #292a2d;
+	width: 15%;
+	height: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	border-left: 0.3vh solid #6D604A;
+	border-bottom: 0.3vh solid #6D604A;
+	border-radius: 0 0 0 1vh;
+
+}
+
+.links > a > img {
+	height: 5vh;
+}
+
+
+h1 {
+	font-family: "wuwa", serif;
+	margin: 0;
+	font-size: 5vh;
+}
+
+main {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+
+
+}
+
+main2 {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: space-between;
+
+
+}
+
+.left-menu {
+	width: 15%;
+	height: 100%;
+	background-color: #292a2d;
+	margin-top: 2vh;
+	border-top: 0.3vh solid #6d604a;
+	border-left: 0.3vh solid #6d604a;
+	border-radius: 1vh 0 0 0vh;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	overflow-y: scroll;
+
+
+}
+
+
+
+
+.character {
+	color: white;
+	font-family: "Wuwa";
+	font-size: 2.5vh;
+	border-bottom: 0.3vh solid #6d604a;
+}
+
+.character > h2 {
+	margin: 1.5vh 0 1.5vh 0;
+}
+
+.sidebar-character {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-right: 1vh;
+}
+
+.sidebar-character > a {
+	text-decoration: none;
+	margin-top: 1vh;
+	color: white;
+	font-family: "ubuntu";
+	font-weight: 500;
+	border: 0.3vh solid #6d604a;
+	border-radius: 1vh;
+	width: 87%;
+	padding: 2vh 0 2vh 0;
+	transition: border 0.2s ease-in-out;
+	transition: transform 0.3s ease-in-out;
+	font-size: 3vh;
+}
+
+.sidebar-character > a:hover {
+	border: 0.3vh solid #fdf9a9;
+	transition: border 0.2s ease-in-out;
+	transition: transform 0.3s ease-in-out;
+	transform: scale(1.04)
+}
+
+.right-menu {
+	width: 15%;
+	height: 100%;
+	background-color: #292a2d;
+	margin-top: 2vh;
+	border-top: 0.3vh solid #6d604a;
+	border-right: 0.3vh solid #6d604a;
+	border-radius: 0 1vh 0 0;
+	flex-direction: column;
+	text-align: center;
+
+}
+
+.guide {
+	color: white;
+	font-family: "Wuwa";
+	font-size: 2.5vh;
+	border-bottom: 0.3vh solid #6d604a;
+}
+
+.guide > h2 {
+	margin: 1.5vh 0 1.5vh 0;
+}
+
+
+
+
+
+.sidebar-guide {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-left: 0.8vh;
+
+}
+
+.sidebar-guide > p {
+	margin: 1vh 0 0 0;
+	color: white;
+	font-family: "ubuntu";
+	font-weight: 500;
+	border: 0.3vh solid #6d604a;
+	border-radius: 1vh;
+	width: 90%;
+	height: 8vh;
+	padding: 2vh 0 2vh 0;
+	user-select: none;
+	font-size: 2.5vh;
+	position: relative;
+	overflow: hidden;
+	transition: margin-left 0.5s ease;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+
+}
+
+.sidebar-guide > p > img {
+	height: 7vh;
+	margin: 0 1vh 0 1.4vh;	
+}
+
+.sidebar-guide > p:hover {
+	text-align: center;
+	border: 0.3vh solid #fdf9a9;
+	transition: border 0.2s ease-in-out;
+	transition: margin-left 0.5s ease;
+	margin-left: 7%;
+}
+
+
+.bg > img{
+	z-index: 0;
+	position: absolute;
+	filter: grayscale(100%);
+}
+
+.main {
+	z-index: 1;
+	margin-top: 2vh;
+	width: 68%;
+	height: 100%;
+	background-color: #292a2d;
+	border: 0.3vh solid #6D604A;
+	border-bottom: none;
+	border-radius: 1vh 1vh 0 0;
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+
+}
+
+.main > p {
+	font-family: "ubuntu";
+	font-weight: 500;
+	color: white;
+	font-size: 10vh;
+}
+
+.main > p1 {
+	color: white;
+	font-family: "ubuntu";
+	font-size: 2vh;
+	padding: 0 2vh 0 2vh;
+}
+
+img { 
+	pointer-events: none; 
+	user-select: none;
+}
+
