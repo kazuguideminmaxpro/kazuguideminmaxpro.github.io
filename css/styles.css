@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-@font-face {
-	font-family: 'wuwa';
-    src: url('wuwa.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 body::-webkit-scrollbar {
     width: 0.8vw; 
     height: 100vh;
@@ -41,6 +34,7 @@ body {
 	flex-direction: column;
 	align-items: center;
 	overflow-x: hidden;
+	font-family: 'ubuntu'
 	}
 
 header {
@@ -86,7 +80,6 @@ header {
 .navbar > a{
 	text-decoration: none;
 	color: white;
-	font-family: "Ubuntu", serif;
 	font-size: 3vh;
 	font-weight: 500;
   	width: 20%;
@@ -126,7 +119,6 @@ header {
 
 
 h1 {
-	font-family: "wuwa", serif;
 	margin: 0;
 	font-size: 5vh;
 }
@@ -170,7 +162,6 @@ main2 {
 
 .character {
 	color: white;
-	font-family: "Wuwa";
 	font-size: 2.5vh;
 	border-bottom: 0.3vh solid #6d604a;
 }
@@ -190,7 +181,6 @@ main2 {
 	text-decoration: none;
 	margin-top: 1vh;
 	color: white;
-	font-family: "ubuntu";
 	font-weight: 500;
 	border: 0.3vh solid #6d604a;
 	border-radius: 1vh;
@@ -223,7 +213,6 @@ main2 {
 
 .guide {
 	color: white;
-	font-family: "Wuwa";
 	font-size: 2.5vh;
 	border-bottom: 0.3vh solid #6d604a;
 }
@@ -247,7 +236,6 @@ main2 {
 .sidebar-guide > p {
 	margin: 1vh 0 0 0;
 	color: white;
-	font-family: "ubuntu";
 	font-weight: 500;
 	border: 0.3vh solid #6d604a;
 	border-radius: 1vh;
@@ -301,7 +289,6 @@ main2 {
 }
 
 .main > p {
-	font-family: "ubuntu";
 	font-weight: 500;
 	color: white;
 	font-size: 10vh;
@@ -309,7 +296,6 @@ main2 {
 
 .main > p1 {
 	color: white;
-	font-family: "ubuntu";
 	font-size: 2vh;
 	padding: 0 2vh 0 2vh;
 }
