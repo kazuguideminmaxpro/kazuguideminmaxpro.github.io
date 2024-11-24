@@ -36,6 +36,7 @@ body {
 	align-items: center;
 	overflow-x: hidden;
 	font-family: 'ubuntu';
+
 	}
 
 header {
@@ -133,7 +134,7 @@ main {
 
 main2 {
 	width: 100vw;
-	height: 100vh;
+	height: 89.8vh;
 	display: flex;
 	justify-content: space-between;
 
@@ -141,7 +142,7 @@ main2 {
 }
 
 .left-menu {
-	width: 15%;
+	width: 7%;
 	height: 100%;
 	background-color: #292a2d;
 	margin-top: 2vh;
@@ -150,52 +151,45 @@ main2 {
 	border-radius: 1vh 0 0 0vh;
 	display: flex;
 	flex-direction: column;
-	text-align: center;
-	overflow-y: scroll;
-
-
-}
-
-
-
-
-.character {
-	color: white;
-	font-size: 2.5vh;
-	border-bottom: 0.3vh solid #6d604a;
-}
-
-.character > h2 {
-	margin: 1.5vh 0 1.5vh 0;
-}
-
-.sidebar-character {
-	display: flex;
-	flex-direction: column;
 	align-items: center;
-	margin-right: 1vh;
+	overflow-y: scroll;
+	
+
+
 }
 
-.sidebar-character > a {
-	text-decoration: none;
-	margin-top: 1vh;
-	color: white;
-	font-weight: 500;
-	border: 0.3vh solid #6d604a;
-	border-radius: 1vh;
-	width: 87%;
-	padding: 2vh 0 2vh 0;
-	transition: border 0.2s ease-in-out;
-	transition: transform 0.3s ease-in-out;
-	font-size: 3vh;
+
+.left-menu img{
+	width: 100%;
 }
 
-.sidebar-character > a:hover {
-	border: 0.3vh solid #FBEC90;
-	transition: border 0.2s ease-in-out;
-	transition: transform 0.3s ease-in-out;
-	transform: scale(1.04)
+.fiol {
+	background: url(/media/ring/ringnorfiol.png);
+	background-size: 100%;
+	width: 6vw;
+	height: 12vh;
+	position: relative;
 }
+
+.gold {
+	background: url(media/ring/ringnorgold.png);
+
+	background-size: 100%;
+	width: 6vw;
+	height: 12vh;
+	position: relative;
+}
+
+.gold:hover {
+	background: url(/media/ring/ringholdgold.png);
+	background-size: 100%;
+}
+
+.fiol:hover {
+	background: url(/media/ring/ringholdfiol.png);
+	background-size: 100%;
+}
+
 
 .right-menu {
 	width: 7%;
@@ -233,7 +227,7 @@ main2 {
 }
 
 .sidebar-guide > p {
-	margin: 1vh 0 0 0.2vh;
+	margin: 0;
 	color: white;
 	width: 100%;
 	height: 8vh;
@@ -263,7 +257,7 @@ main2 {
 .main {
 	z-index: 1;
 	margin-top: 2vh;
-	width: 68%;
+	width: 80%;
 	height: 100%;
 	background-color: #292a2d;
 	border: 0.3vh solid #6D604A;
@@ -278,7 +272,7 @@ main2 {
 .wrapper {
 	z-index: 1;
 	margin-top: 2vh;
-	width: 68%;
+	width: 70%;
 	height: 100%;
 	background-color: #292a2d;
 	border: 0.3vh solid #6D604A;
@@ -299,12 +293,6 @@ main2 {
 	height: 100%;
 	gap: 3%;
 	align-content: flex-start
-}
-
-.main > p {
-	font-weight: 500;
-	color: white;
-	font-size: 10vh;
 }
 
 .main > p1 {
@@ -333,14 +321,20 @@ img {
 
 .resonator a > img {
 	position: relative;
-	width: 9vw;
-	left: 5%;
+	width: 100%;
 }
 
 button {
-    cursor: pointer;
-    position: relative;
-    top: 88%;
-    right: 300%;
+
 }
 
+#playButton {
+	cursor: pointer;
+	background-color: #292a2d;
+	border: none;
+	width: 100%;
+	height: 100%;
+
+ 	 background-image: url('/media/card/cameliya.png');
+  	background-size: cover;
+}
