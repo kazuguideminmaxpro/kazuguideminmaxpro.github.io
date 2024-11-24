@@ -337,3 +337,10 @@ img {
 	left: 5%;
 }
 
+button {
+    cursor: pointer;
+    position: relative;
+    top: 88%;
+    right: 300%;
+}
+
