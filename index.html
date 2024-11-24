@@ -31,8 +31,25 @@
 		<div class="bg">
 			<img style="top: 23%;left: 60%;width: 50%;" src="media/sanhua.png" alt="">
 			<img style="right: 74%;width: 35%;" src="media/cam.png" alt="">
+			<button id="musicButton">ЧУГУН?</button>
+			<audio id="audio" src="media/chuf.mp3" preload="auto"></audio>
 		</div>
 		<div class="main">
+			
+			<script>const button = document.getElementById('musicButton');
+const audio = document.getElementById('audio');
+let isPlaying = false;
+
+button.addEventListener('click', () => {
+    if (isPlaying) {
+        audio.pause();
+        button.textContent = "ЧУГУН?";
+    } else {
+        audio.play();
+        button.textContent = "ДА";
+    }
+    isPlaying = !isPlaying;
+});</script>
 		</div>
 	</main>
 	<section></section>
