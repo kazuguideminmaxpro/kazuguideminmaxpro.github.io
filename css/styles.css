@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body::-webkit-scrollbar {
+
+    background-color: #292a2d;
+    border-left: 0.3vh solid #6d604a;
+
+}
+
+body::-webkit-scrollbar-thumb {
+
+
+    background-color: #202124; 
+    border-radius: 1vh; 
+    border: 0.3vh solid #6D604A;
+}
+
+.left-menu::-webkit-scrollbar {
+    width: 0.4vw; 
+    height: 100vh;
+}
+
+.left-menu::-webkit-scrollbar-thumb {
+    background-color: #292a2d; 
+    border-radius: 1vh; 
+    border: 0.3vh solid #6D604A;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #202124;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	overflow-x: hidden;
+	font-family: 'ubuntu';
+
+	}
+
+header {
+	width: 100vw;
+	height: 8vh;
+	color: white;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	text-align: center;
+	justify-content: space-between;
+}
+
+.header {
+	background-color: #292a2d;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border-bottom: 0.3vh solid #6d604a;
+	align-items: center;
+}
+
+.logo {
+	width: 15%;
+	height: 100%;
+	h1 {
+		display: flex;
+		width: 100%;
+		height: 100%;
+		justify-content: center;
+		align-items: center;
+
+	}
+}
+
+
+
+.logo a {
+	text-decoration: none;
+	color: white;
+	font-size: 2.6vw;
+}
+
+
+.navbar {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 60%;
+	height: 100%;
+}
+
+.navbar > a{
+	text-decoration: none;
+	color: white;
+	font-size: 1.6vw;
+	font-weight: 500;
+  	width: 25%;
+  	height: 100%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+
+}
+
+.navbar > a:hover {
+	margin-top: 0.2vh;
+	border-bottom: 0.3vh solid #FBEC90;
+	background-color: #6d604aba;
+	height: 100%;
+	width: 25%;
+	transition: background-color 0.2s ease-in-out;
+}
+
+
+
+
+.links {
+	width: 15%;
+	height: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+
+}
+
+.links > a > img {
+	width: 5vh;
+}
+
+
+h1 {
+	margin: 0;
+	font-size: 5vh;
+}
+
+main {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+
+
+}
+
+main2 {
+	width: 100vw;
+	height: 89.8vh;
+	display: flex;
+	justify-content: space-between;
+
+
+}
+
+.left-menu {
+	width: 7%;
+	height: 100%;
+	background-color: #292a2d;
+	margin-top: 2vh;
+	border-top: 0.3vh solid #6d604a;
+	border-left: 0.3vh solid #6d604a;
+	border-radius: 1vh 0 0 0vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	overflow-y: scroll;
+	
+
+
+}
+
+.fiol {
+	width: 5.5vw;
+	background-image: url(/media/ring/ringnorfiol.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+    text-align: center;
+    overflow: hidden;
+	img {
+		width: 5.5vw;
+
+	}
+}
+
+.fiol:hover{
+	background-image: url(/media/ring/ringholdfiol.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.gold {
+	
+	width: 5.5vw;
+	background-image: url(/media/ring/ringnorgold.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	    text-align: center;
+    overflow: hidden;
+	img {
+		width: 5.5vw;
+
+	}
+
+}
+
+
+.gold:hover{
+	background-image: url(/media/ring/ringholdgold.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+
+.right-menu {
+	width: 7%;
+	height: 100%;
+	background-color: #292a2d;
+	margin-top: 2vh;
+	border-top: 0.3vh solid #6d604a;
+	border-right: 0.3vh solid #6d604a;
+	border-radius: 0 1vh 0 0;
+	flex-direction: column;
+	text-align: center;
+
+}
+
+.guide {
+	color: white;
+	
+	border-bottom: 0.3vh solid #6d604a;
+
+}
+
+.guide > h2 {
+	margin: 1.5vh 0 1.5vh 0;
+	font-size: 2vw;
+}
+
+
+
+
+
+.sidebar-guide {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+
+.sidebar-guide > p {
+	margin: 0;
+	color: white;
+	width: 100%;
+	height: 10vh;
+	user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar-guide > p > img {
+	width: 4.5vw;	
+}
+
+.sidebar-guide > p:hover {
+	margin-left: 0.1vw;
+	border-right: 0.3vh solid #FBEC90;
+	background-color: #6d604aba;
+	transition: background-color 0.2s ease-in-out;
+}
+
+
+.bg > img{
+	z-index: 0;
+	position: absolute;
+	filter: grayscale(100%);
+}
+
+.main {
+	z-index: 1;
+	margin-top: 2vh;
+	width: 80%;
+	height: 100%;
+	background-color: #292a2d;
+	border: 0.3vh solid #6D604A;
+	border-bottom: none;
+	border-radius: 1vh 1vh 0 0;
+	display: flex;
+	text-align: center;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.wrapper {
+	z-index: 1;
+	margin-top: 2vh;
+	width: 70%;
+	height: 100%;
+	background-color: #292a2d;
+	border: 0.3vh solid #6D604A;
+	border-bottom: none;
+	border-radius: 1vh 1vh 0 0;
+	display: flex;
+	text-align: center;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.wrap {
+	margin-top: 5%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	width: 90%;
+	height: 100%;
+	gap: 3%;
+	align-content: flex-start
+}
+
+.main > p1 {
+	color: white;
+	font-size: 2vh;
+	padding: 0 2vh 0 2vh;
+}
+
+img { 
+	pointer-events: none; 
+	user-select: none;
+}
+
+.resonator {
+	width: 13%;
+	height: 22%;
+	border: 0.3vh solid #6D604A;
+	border-radius: 1vh;
+	display: flex;
+	overflow: hidden;
+	justify-content: center;
+}
+
+.resonator a > img {
+	position: relative;
+	width: 100%;
+}
+
+.select-tir{
+	width: 13%;
+	height: 100%;
+	margin-top: 2vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	a {
+		color: white;
+		text-decoration: none;
+		background-color: #292a2d;
+		width: 12vw;
+		padding: 2.5vh 0 2.5vh 0;
+		text-align: center;
+		margin-top: 1vh;
+		font-size: 1vw;
+		border: 0.3vh solid #6D604A;
+		border-radius: 1vw;
+	}
+}
+
+.select-tir a:hover {
+	border: 0.3vh solid #FBEC90;
+	background-color: #6d604aba;
+	transition: background-color 0.2s ease-in-out;
+}
+
+.legend {
+	width: 15%;
+	border-left: 0.3vh solid #6D604A;
+	height: 100%;
+	margin-top: 2vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	p1 {
+		color: white;
+		font-size: 1.5vw;
+	}
+}
+
+.legend p {
+	color: white;
+	font-size: 1.5vw;
+	
+}
+
+
+
+.tierlist{
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	margin-top: 1vh;
+}
+
+.stroke {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: start;
+	margin-top: 0.3vh;
+	width: 100%;
+	height: 10%;
+	background-color: #202124;
+	p {
+		width: 5vw;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-height: 10%;
+		word-break: break-all;
+		color: black;
+		font-size: 0.9vw;
+	}
+}
+
+.char {
+	display: flex;
+	align-items: center;
+	img{
+		width: 4.6vw;
+	}
+}
+
+
+
+button {
+
+}
+
+#playButton {
+	cursor: pointer;
+	background-color: #292a2d;
+	border: none;
+	width: 100%;
+	height: 100%;
+
+ 	 background-image: url('/media/card/cameliya.png');
+  	background-size: cover;
+}
