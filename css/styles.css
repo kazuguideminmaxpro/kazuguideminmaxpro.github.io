@@ -15,17 +15,6 @@ body::-webkit-scrollbar-thumb {
     border: 0.3vh solid #6D604A;
 }
 
-.left-menu::-webkit-scrollbar {
-    width: 0.4vw; 
-    height: 100vh;
-}
-
-.left-menu::-webkit-scrollbar-thumb {
-    background-color: #292a2d; 
-    border-radius: 1vh; 
-    border: 0.3vh solid #6D604A;
-}
-
 body {
 	padding: 0;
 	margin: 0;
@@ -56,7 +45,7 @@ header {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	border-bottom: 0.3vh solid #6d604a;
+	border-bottom: 0.18vw solid #6d604a;
 	align-items: center;
 }
 
@@ -73,7 +62,7 @@ header {
 	}
 }
 
-
+.icon img{max-width: 100%;}
 
 .logo a {
 	text-decoration: none;
@@ -112,9 +101,6 @@ header {
 	transition: background-color 0.2s ease-in-out;
 }
 
-
-
-
 .links {
 	width: 15%;
 	height: 100%;
@@ -124,15 +110,12 @@ header {
 
 }
 
-.links > a > img {
-	width: 5vh;
-}
+.links > a > img {width: 5vh;}
 
 
-h1 {
-	margin: 0;
-	font-size: 5vh;
-}
+h1 {margin: 0; font-size: 5vh;}
+
+/*main*/
 
 main {
 	width: 100vw;
@@ -164,9 +147,161 @@ main2 {
 	flex-direction: column;
 	align-items: center;
 	overflow-y: scroll;
-	
+}
+
+/*characters*/
+
+.gcard {
+	width: 8.7vw;
+	max-height: 20.2vh;
+	border: 0.2vw solid #555558;
+	border-radius: 0.5vw;
+	overflow: hidden;
+	transition: all 0.2s ease-in-out;
+}
+
+.gcard:hover {
+	border: 0.2vw solid #fefeff;
+	transform: scale(1.03);
+	transition: all 0.2s ease-in-out;
+}
+
+.c-icon {
+	width: 100%;
+	height: 82%;
+	position: relative;
+	overflow: hidden;
+}
+
+.c-img {
+	max-width: 100%;
+	object-fit: contain;
+}
+
+.g-line {
+	width: 100%;
+	height: 100%;
+	background-image: url(/media/frame/gold.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: bottom;
+	position: absolute;
+}
+
+.frame-element {
+	margin: 0.15vw;
+	width: 4.5vw;
+	height: 4.5vh;
+	background-image: url(/media/element/frame2.png);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: 50%;
+	position: absolute;
+}
+
+.element {
+	width: 2.2vw;
+	position: absolute;
+	top: 0.03vw;
+	right: 2.27vw;
+}
+
+.name {
+	width: 100%;
+	height: 18%;
+	background-color: #1f1e20;
+	p{
+		color: white;
+		font-size: 1.4vw;
+		font-weight: 400;
+		margin: 0;
+
+	}
+}
+
+/*color element*/
+
+.spectro {
+	filter: brightness(0) saturate(100%) invert(86%) sepia(47%) saturate(459%) hue-rotate(356deg) brightness(104%) contrast(101%);
+}
+
+.glacio {
+	filter: brightness(0) saturate(100%) invert(54%) sepia(100%) saturate(1355%) hue-rotate(178deg) brightness(88%) contrast(85%);
+}
+
+.fusion {
+	filter: brightness(0) saturate(100%) invert(61%) sepia(87%) saturate(2206%) hue-rotate(327deg) brightness(97%) contrast(92%);
+}
+
+.electro {
+	filter: brightness(0) saturate(100%) invert(49%) sepia(30%) saturate(4051%) hue-rotate(236deg) brightness(99%) contrast(92%);
+}
+
+.aero {
+	filter: brightness(0) saturate(100%) invert(78%) sepia(49%) saturate(529%) hue-rotate(93deg) brightness(98%) contrast(89%);
+}
+
+.havoc {
+	filter: brightness(0) saturate(100%) invert(42%) sepia(100%) saturate(2807%) hue-rotate(300deg) brightness(98%) contrast(83%);
+}
 
 
+
+/*tierlist*/
+
+.tgcard {
+	width: 8.7vw;
+	max-height: 20.2vh;
+	border: 0.2vw solid #555558;
+	border-radius: 0.5vw;
+	overflow: hidden;
+	transition: all 0.2s ease-in-out;
+}
+
+.tgcard:hover {
+	border: 0.2vw solid #fefeff;
+	transform: scale(1.03);
+	transition: all 0.2s ease-in-out;
+}
+
+.tc-icon {
+	width: 100%;
+	height: 82%;
+	position: relative;
+	overflow: hidden;
+}
+
+.tc-img {
+	max-width: 100%;
+	object-fit: contain;
+}
+
+.tg-line {
+	width: 100%;
+	height: 100%;
+	background-image: url(/media/frame/gold.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: bottom;
+	position: absolute;
+}
+
+.tframe-element {
+	margin: 0.15vw;
+	width: 4.5vw;
+	height: 4.5vh;
+	background-image: url(/media/element/frame2.png);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: 50%;
+	position: absolute;
+}
+
+.telement {
+	width: 2.2vw;
+	position: absolute;
+	top: 0.03vw;
+	right: 2.27vw;
 }
 
 .fiol {
@@ -307,7 +442,7 @@ main2 {
 }
 
 .wrapper {
-	margin-top: 1vh;
+	margin-top: 2vh;
 	width: 98%;
 	display: flex;
 	flex-wrap: wrap;
@@ -321,73 +456,9 @@ main2 {
 	text-decoration: none;
 }
 
-.gold-card {
-	display: flex;
-	flex-direction: column;
-	width: 9vw;
-	height: 21vh;
-	align-items: center;
-	justify-content: center;
-	color: white;
-	background-image: url(/media/frame/frame.png);
-	background-size: 9vw 21vh;
-	background-repeat: no-repeat;
-	transition: transform 0.2s ease-in-out;
-	p {	
 
-        margin: 0;
-        width: 96%;
-        padding-bottom: 0.5vh;
-        height: 20.5%;
-        font-size: 1.5vw;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-	}
-}
 
-.gold-card:hover{
-	transform: scale(1.02);
-	transition: transform 0.2s ease-in-out;
-}	
 
-.img {
-	margin-top: 1.5%;
-	width: 96%;
-	height: 78%;
-	display: flex;
-	position: relative;
-
-}
-
-.img:hover {
-
-}
-
-.img::after {
-	content: '';
-	background-image: url(/media/frame/gold.png);
-	background-repeat: no-repeat;
-	background-size: 9vw 16.5vh;
-	position: absolute;
-    width: 100%; 
-    height: 100%;
-    z-index: 1; 
-}
-
-.img > img {
-	width: 100%;
-	text-align: center;
-	
-
-}
-
-.element {
-	width: 2vw !important; 
-	position: absolute;
-	filter: brightness(0) saturate(100%) invert(83%) sepia(51%) saturate(406%) hue-rotate(359deg) brightness(104%) contrast(105%);;
-	background-size: 10%;
-}
 
 .main > p1 {
 	color: white;
@@ -580,6 +651,7 @@ img {
 .icontir {
 	width: 4.9vw;
 	height: 9.5vh;
+	object-fit: contain;
 }
 
 
