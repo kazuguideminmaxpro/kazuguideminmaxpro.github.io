@@ -503,6 +503,8 @@ main2 {
 	width: 100%;
 	h1{
 		font-size: 1.3vw;
+		margin-top: 2vw;
+		margin-bottom: 0.5vw;
 	}
 	p{
 		font-size: 1vw;
