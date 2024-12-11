@@ -486,7 +486,22 @@ main2 {
 	filter: grayscale(100%);
 }
 
+/*теги*/
 
+.ch-div {
+	background-color: #292a2d;
+	color: white;
+	padding: 0.5vw 1vw 0.5vw 1vw;
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ch-con {
+	background-color: #292a2d;
+	padding: 4vw;
+	width: 92%;
+}
 
 .main {
 	z-index: 1;

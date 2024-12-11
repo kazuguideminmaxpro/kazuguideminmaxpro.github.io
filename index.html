@@ -34,9 +34,13 @@
 				<div class="shiza">
 					<div class="change-info">
 						Теги и стихии в разрабутке
-						<div class="ch-div"><p></p></div>
-						<div class="ch-div"><p></p></div>
-						<div class="ch-div"><p></p></div>
+						<div class="ch-div">
+							<span class="ch-t">Теги</span>
+							<button class="ch-btn">+</button>
+						</div>
+						<div class="ch-con" style="display: none;">
+							<p>Теги скоро будут.... Ждем</p>
+						</div>
 					</div>
 					<table>
     <tr style="position: sticky; top: 0; z-index: 2;">
@@ -680,6 +684,16 @@
 				</div>
 			</div>
 		</div>
+		<script>
+			document.querySelector('.ch-btn').addEventListener('click', function() {
+    const container = document.querySelector('.ch-con');
+    if (container.style.display === 'none') {
+        container.style.display = 'block';
+    } else {
+        container.style.display = 'none';
+    }
+});
+		</script>
 	</main>
 	<section></section>
 </body>
