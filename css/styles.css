@@ -499,8 +499,16 @@ main2 {
 
 .ch-con {
 	background-color: #292a2d;
-	padding: 4vw;
-	width: 92%;
+	padding: 1vw;
+	width: 100%;
+	h1{
+		font-size: 1.3vw;
+	}
+	p{
+		font-size: 1vw;
+		font-weight: 300;
+		margin: 0.4vw;
+	}
 }
 
 .main {
